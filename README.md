@@ -9,22 +9,7 @@ Streamlit + Python 3.13 + LLM inference to turn recruiter-style questions into s
   <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-app-ff4b4b" />
 </p>
   <!-- Replace with your real links -->
-<p align="center">
-  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/actions">
-    <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/leland-talbert/AI-Insights-Copilot/ci.yml?branch=main" />
-  </a>
-  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/leland-talbert/AI-Insights-Copilot" />
-  </a>
-  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/stargazers">
-    <img alt="Stars" src="https://img.shields.io/github/stars/leland-talbert/AI-Insights-Copilot?style=flat" />
-  </a>
-  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/leland-talbert/AI-Insights-Copilot" />
-  </a>
-  <img alt="Python" src="https://img.shields.io/badge/python-3.13-blue" />
-  <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-app-ff4b4b" />
-</p>
+
 
 
 ---
