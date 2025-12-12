@@ -5,22 +5,27 @@ Generative AI dashboard built with Python 3.13 and Streamlit
 Streamlit + Python 3.13 + LLM inference to turn recruiter-style questions into structured, actionable insights.
 
 <p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/python-3.13-blue" />
+  <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-app-ff4b4b" />
+</p>
   <!-- Replace with your real links -->
-  <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-insights-copilot/actions/workflows/ci.yml">
-    <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/YOUR_GITHUB_USERNAME/ai-insights-copilot/ci.yml?branch=main" />
+<p align="center">
+  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/actions">
+    <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/leland-talbert/AI-Insights-Copilot/ci.yml?branch=main" />
   </a>
-  <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-insights-copilot/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/YOUR_GITHUB_USERNAME/ai-insights-copilot" />
+  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/leland-talbert/AI-Insights-Copilot" />
   </a>
-  <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-insights-copilot/stargazers">
-    <img alt="Stars" src="https://img.shields.io/github/stars/YOUR_GITHUB_USERNAME/ai-insights-copilot?style=flat" />
+  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/leland-talbert/AI-Insights-Copilot?style=flat" />
   </a>
-  <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-insights-copilot/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/YOUR_GITHUB_USERNAME/ai-insights-copilot" />
+  <a href="https://github.com/leland-talbert/AI-Insights-Copilot/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/leland-talbert/AI-Insights-Copilot" />
   </a>
   <img alt="Python" src="https://img.shields.io/badge/python-3.13-blue" />
   <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-app-ff4b4b" />
 </p>
+
 
 ---
 
