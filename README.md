@@ -47,9 +47,9 @@ If you don’t have a GIF yet, start with a screenshot:
 ---
 
 ## Architecture
-<p align="center">
-  <img src="docs/images/architecture.png" alt="Architecture Diagram" width="900">
-</p>
+
+![Architecture Diagram](docs/images/architecture.png)
+
 
 **High-level flow**
 1. Streamlit UI captures query  
