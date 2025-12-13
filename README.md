@@ -28,12 +28,10 @@ It’s designed as an enterprise-ready prototype: modular app architecture, secu
 ## Demo
 > Add a short GIF or screenshot here (recommended).
 
-<p align="center">
-  <img src="docs/images/demo.gif" alt="AI Insights Copilot Demo" width="900">
-</p>
+## Demo
 
-If you don’t have a GIF yet, start with a screenshot:
-- `docs/images/dashboard.png`
+![AI Insights Copilot Dashboard](docs/images/dashboard.png)
+
 
 ---
 
