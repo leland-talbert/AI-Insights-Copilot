@@ -26,9 +26,6 @@ It’s designed as an enterprise-ready prototype: modular app architecture, secu
 ---
 
 ## Demo
-> Add a short GIF or screenshot here (recommended).
-
-## Demo
 
 ![AI Insights Copilot Dashboard](docs/images/dashboard.png)
 
