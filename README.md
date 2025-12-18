@@ -67,6 +67,7 @@ It’s designed as an enterprise-ready prototype: modular app architecture, secu
 
 ### 1) Clone the repo
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/ai-insights-copilot.git
+git clone https://github.com/leland-talbert/ai-insights-copilot.git
 cd ai-insights-copilot
+
 
