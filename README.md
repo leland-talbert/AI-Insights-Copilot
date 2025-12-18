@@ -1,9 +1,30 @@
-# AI-Insights-Copilot
-Generative AI dashboard built with Python 3.13 and Streamlit
-# AI Insights Copilot
-**Generative AI Dashboard & Intelligent Query Engine**  
-Streamlit + Python 3.13 + LLM inference to turn recruiter-style questions into structured, actionable insights.
+## AI Insights Copilot (Capability Demo)
 
+This repository contains a fictional, demonstration-only prototype exploring
+how Generative AI can support enterprise decision-making with:
+
+- Audience-specific insights (Executive, Finance, Technology, Analyst)
+- Human-in-the-loop review by design
+- Safety, governance, and cost awareness
+
+📽 **Live Demo Walkthrough (2 min):**
+https://www.linkedin.com/feed/update/urn:li:activity:7406702198795153408/
+
+⚠️ All data and content are fictional and generated solely for demonstration purposes.
+No proprietary, confidential, or employer-related information was used.
+
+This demo reflects how I approach real-world GenAI system design: 
+business-first, safety-aware, and human-reviewed by default.
+
+
+## Architecture & Stack
+
+- Python 3.13
+- Streamlit
+- OpenAI / LLM inference
+- Role-aware prompt orchestration
+- Human-in-the-loop validation
+  
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/python-3.13-blue" />
   <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-app-ff4b4b" />
