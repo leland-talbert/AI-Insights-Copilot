@@ -6,6 +6,8 @@ how Generative AI can support enterprise decision-making with:
 - Audience-specific insights (Executive, Finance, Technology, Analyst)
 - Human-in-the-loop review by design
 - Safety, governance, and cost awareness
+- Cost-aware inference and model trade-off analysis
+
 
 📽 **Live Demo Walkthrough (2 min):**
 https://www.linkedin.com/feed/update/urn:li:activity:7406702198795153408/
