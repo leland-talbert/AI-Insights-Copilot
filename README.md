@@ -16,7 +16,7 @@ Version 2 adds Retrieval-Augmented Generation (RAG) on Postgres + pgvector, a de
 
 [![AI Insights Copilot v2 demo video](https://img.youtube.com/vi/mVq__cJ01U0/hqdefault.jpg)](https://youtu.be/mVq__cJ01U0)
 
-**[Watch the v2 walkthrough](https://youtu.be/mVq__cJ01U0)** — document ingestion, a cross-document question with click-through citations, the citation check, an "insufficient evidence" response, Arize Phoenix traces, and the evaluation run.
+**[Watch the v2 walkthrough](https://youtu.be/mVq__cJ01U0)** (best viewed full screen at 1080p) — document ingestion, a cross-document question with click-through citations, the citation check, an "insufficient evidence" response, Arize Phoenix traces, and the evaluation run.
 
 ### Evaluation baseline (GPT-4.1-mini, 14 fixed questions)
 
