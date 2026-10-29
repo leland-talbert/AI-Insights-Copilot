@@ -1,0 +1,477 @@
+{
+  "run_at": "2026-10-29T02:56:08+00:00",
+  "model": "gpt-4.1-mini",
+  "judge_model": "gpt-4.1-mini",
+  "workspace": "eval",
+  "top_k": 6,
+  "min_similarity": 0.25,
+  "duration_s": 50.5,
+  "indexing": [
+    "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf: duplicate",
+    "ApexSphere_Q1_Data_Center_Operations_Report.pdf: duplicate",
+    "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf: duplicate"
+  ],
+  "summary": {
+    "questions": 14,
+    "retrieval_recall": 1.0,
+    "faithfulness": 1.0,
+    "answered_when_answerable": "10/10",
+    "abstained_when_unanswerable": "4/4",
+    "abstention_accuracy": 1.0,
+    "claims_rejected_by_citation_check": 0,
+    "claims_flagged_for_review": 1,
+    "errors": 0,
+    "mean_latency_s": 1.992,
+    "total_cost_usd": 0.0168
+  },
+  "cases": [
+    {
+      "id": "q01",
+      "question": "What was the average utilization of the Atlanta campus in Q1, and what is the operating target?",
+      "answerable": true,
+      "status": "Partial evidence",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p4"
+      ],
+      "expected": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 3,
+      "claims_rejected": 0,
+      "claims_needing_review": 1,
+      "answer": [
+        "The average utilization of the Atlanta campus (ATL-1) in Q1 was 87%, and the operating target is 75%.",
+        "ATL-1 ran well above the 75% operating target during Q1, which reduces the headroom available for maintenance and failover.",
+        "ATL-1 has 18 MW of critical IT capacity, with 15.7 MW in use at quarter end, consistent with the 87% utilization reported."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.47,
+      "cost_usd": 0.00133,
+      "error": ""
+    },
+    {
+      "id": "q02",
+      "question": "What caused the February 11 incident and what was its impact on Hall 3?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1"
+      ],
+      "expected": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 5,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "The February 11 incident was caused by the failure of UPS Bank B batteries at ATL-1, which led to an unexpected failover and resulted in 14 minutes of degraded cooling in Hall 3.",
+        "The UPS Bank B batteries were at 82% of their rated service life and identified as the root cause of the failover on February 11.",
+        "Hall 3 experienced 14 minutes of degraded cooling due to the UPS Bank B failover, but no customer workloads went offline.",
+        "Hall 3 is served by a single utility feed, which poses a risk of correlated failure modes during peak load, especially combined with the end-of-life Chiller Plant 2.",
+        "Two tenants filed formal inquiries following the incident, indicating some customer concern despite no workloads going offline."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.35,
+      "cost_usd": 0.001632,
+      "error": ""
+    },
+    {
+      "id": "q03",
+      "question": "How much capacity would ATL-2 Phase 1 add, what would it cost, and when would it be in service?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p4"
+      ],
+      "expected": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 5,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "ATL-2 Phase 1 would add 24 MW of critical IT capacity, cost approximately $310 million, and is targeted to be in service by Q3 2028.",
+        "Customers have pre-leased 40% of the Phase 1 capacity before construction.",
+        "The payback period for ATL-2 Phase 1 at full lease-up is projected to be 6.5 years.",
+        "The Q3 2028 in-service date depends on early commitment due to a 30-month lead time for the new ATL-2 substation interconnect.",
+        "Construction cost inflation at about 7% per year could increase the capital cost if the schedule slips."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.75,
+      "cost_usd": 0.001459,
+      "error": ""
+    },
+    {
+      "id": "q04",
+      "question": "How does the remediation budget in the capital plan compare with the engineering cost estimate for remediation?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1"
+      ],
+      "expected": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 3,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "The remediation budget in the capital plan is $38 million, which covers the engineering cost estimate of $36.7 million plus contingency.",
+        "The engineering cost estimate for remediation is $36.7 million before contingency.",
+        "The capital budget includes a $38 million allocation for infrastructure remediation at ATL-1."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.11,
+      "cost_usd": 0.001171,
+      "error": ""
+    },
+    {
+      "id": "q05",
+      "question": "What is the probability of a site-wide outage at ATL-1 if remediation is deferred, and what would an outage cost per hour?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "expected": [
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 3,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "The probability of a site-wide outage at ATL-1 if remediation is deferred is 18% over the next 24 months, and the estimated cost of such an outage is $2.1 million per hour.",
+        "The probability of a site-wide outage falls to 4% once all three remediation projects are complete.",
+        "The $2.1 million per hour cost estimate includes SLA credits and emergency response but excludes reputational impact."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.56,
+      "cost_usd": 0.001171,
+      "error": ""
+    },
+    {
+      "id": "q06",
+      "question": "Should ApexSphere prioritize expanding in Atlanta or resolving its existing infrastructure risks?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3"
+      ],
+      "expected": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 5,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "ApexSphere should prioritize resolving its existing infrastructure risks at ATL-1 before expanding in Atlanta.",
+        "ATL-1 is operating at 87% utilization, above the 75% target, reducing headroom for maintenance and failover, indicating capacity and resilience issues.",
+        "ATL-1 has high infrastructure risks including aging UPS batteries, a single utility feed for Hall 3, and an end-of-life chiller plant, which create correlated failure risks especially during peak load.",
+        "There is an 18% probability of a site-wide outage at ATL-1 over the next 24 months if remediation is deferred, with an estimated cost of $2.1 million per hour.",
+        "Expanding with ATL-2 involves a $310 million investment with a 6.5 year payback and 40% pre-leased capacity, but a serious outage at ATL-1 during expansion could jeopardize these commitments."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.96,
+      "cost_usd": 0.002145,
+      "error": ""
+    },
+    {
+      "id": "q07",
+      "question": "What is ApexSphere's current net leverage and how close would it get to the covenant limit?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4"
+      ],
+      "expected": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 3,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "ApexSphere's current net leverage is 3.9x, and it would reach 4.3x at peak when funding ATL-2 Phase 1 and the remediation program, which is close to but still below the covenant limit of 4.5x.",
+        "The debt covenant maximum net leverage allowed is 4.5x.",
+        "Funding ATL-2 Phase 1 and the remediation program in the same year would increase net leverage from 3.9x to 4.3x at peak."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.1,
+      "cost_usd": 0.001272,
+      "error": ""
+    },
+    {
+      "id": "q08",
+      "question": "Why is the utility interconnect a risk to both the expansion and the remediation plan?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "expected": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 4,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "The utility interconnect is a risk to both the expansion and the remediation plan because the new ATL-2 substation interconnect has a 30-month lead time, making the Q3 2028 expansion date dependent on an early commitment, and the second utility feed in the remediation plan depends on the same utility engineering team as the new substation work, creating scheduling and resource conflicts.",
+        "Any delay in the utility interconnect increases construction cost inflation, which is running at about 7% a year, thereby increasing the capital estimate for the expansion and remediation.",
+        "A serious outage at ATL-1 during the expansion could jeopardize the 40% pre-lease commitments, linking the utility interconnect risk to financial exposure.",
+        "Engineering advises sequencing remediation ahead of or in parallel with any major expansion that draws on the same utility and construction resources to mitigate outage risks, indicating that shared utility resources pose a risk to both plans."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.15,
+      "cost_usd": 0.001639,
+      "error": ""
+    },
+    {
+      "id": "q09",
+      "question": "How much Atlanta demand is on the waitlist and how much of ATL-2 Phase 1 is already pre-leased?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3"
+      ],
+      "expected": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 4,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "The Atlanta demand waitlist is 2.4 MW and 40% of ATL-2 Phase 1 capacity is already pre-leased.",
+        "ATL-2 Phase 1 will add 24 MW of critical IT capacity.",
+        "The sales team holds a customer waitlist of 2.4 MW for ATL-1, including two hyperscale tenants.",
+        "Customers have committed to pre-lease 40% of ATL-2 Phase 1 capacity."
+      ],
+      "judge_notes": [],
+      "latency_s": 1.62,
+      "cost_usd": 0.001404,
+      "error": ""
+    },
+    {
+      "id": "q10",
+      "question": "What is the status of Chiller Plant 2 and what would replacing it cost?",
+      "answerable": true,
+      "status": "Evidence available",
+      "gate": "",
+      "abstention_correct": true,
+      "retrieval_recall": 1.0,
+      "retrieved": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p4",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p4",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3"
+      ],
+      "expected": [
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p4",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p2"
+      ],
+      "faithfulness": 1.0,
+      "claims_shown": 4,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [
+        "Chiller Plant 2 at ATL-1 has reached the end of its rated service life and replacing it is estimated to cost $9.5 million.",
+        "Chiller Plant 2 was installed in 2009 and its failure would remove about 30% of the campus's cooling capacity during summer peaks.",
+        "Replacing Chiller Plant 2 is expected to lower ATL-1's Power Usage Effectiveness (PUE) to about 1.38, improving sustainability.",
+        "The replacement of Chiller Plant 2 is part of a remediation plan that also includes other projects, with an estimated duration of about 9 months for the chiller replacement."
+      ],
+      "judge_notes": [],
+      "latency_s": 2.08,
+      "cost_usd": 0.001416,
+      "error": ""
+    },
+    {
+      "id": "q11",
+      "question": "How many employees does ApexSphere have in total?",
+      "answerable": false,
+      "status": "Insufficient evidence",
+      "gate": "model",
+      "abstention_correct": true,
+      "retrieval_recall": null,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3"
+      ],
+      "expected": [],
+      "faithfulness": null,
+      "claims_shown": 0,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [],
+      "judge_notes": [],
+      "latency_s": 1.6,
+      "cost_usd": 0.000551,
+      "error": ""
+    },
+    {
+      "id": "q12",
+      "question": "What was ApexSphere's Q3 revenue?",
+      "answerable": false,
+      "status": "Insufficient evidence",
+      "gate": "model",
+      "abstention_correct": true,
+      "retrieval_recall": null,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p3"
+      ],
+      "expected": [],
+      "faithfulness": null,
+      "claims_shown": 0,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [],
+      "judge_notes": [],
+      "latency_s": 1.09,
+      "cost_usd": 0.000593,
+      "error": ""
+    },
+    {
+      "id": "q13",
+      "question": "Does ApexSphere hold a SOC 2 Type II or FedRAMP authorization?",
+      "answerable": false,
+      "status": "Insufficient evidence",
+      "gate": "model",
+      "abstention_correct": true,
+      "retrieval_recall": null,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p3",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p2",
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p2"
+      ],
+      "expected": [],
+      "faithfulness": null,
+      "claims_shown": 0,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [],
+      "judge_notes": [],
+      "latency_s": 1.06,
+      "cost_usd": 0.000623,
+      "error": ""
+    },
+    {
+      "id": "q14",
+      "question": "Who is the CEO of ApexSphere and when were they appointed?",
+      "answerable": false,
+      "status": "Insufficient evidence",
+      "gate": "model",
+      "abstention_correct": true,
+      "retrieval_recall": null,
+      "retrieved": [
+        "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf#p1",
+        "ApexSphere_Q1_Data_Center_Operations_Report.pdf#p1",
+        "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf#p1"
+      ],
+      "expected": [],
+      "faithfulness": null,
+      "claims_shown": 0,
+      "claims_rejected": 0,
+      "claims_needing_review": 0,
+      "answer": [],
+      "judge_notes": [],
+      "latency_s": 0.99,
+      "cost_usd": 0.000436,
+      "error": ""
+    }
+  ]
+}

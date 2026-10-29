@@ -1,0 +1,108 @@
+{
+  "description": "Evaluation set for the fictional ApexSphere documents. 'expected' lists the (source, page) pairs that contain the answer. Unanswerable questions have no expected pages; the correct behavior is an insufficient-evidence response.",
+  "questions": [
+    {
+      "id": "q01",
+      "question": "What was the average utilization of the Atlanta campus in Q1, and what is the operating target?",
+      "answerable": true,
+      "expected": [{"source": "ApexSphere_Q1_Data_Center_Operations_Report.pdf", "page": 1}]
+    },
+    {
+      "id": "q02",
+      "question": "What caused the February 11 incident and what was its impact on Hall 3?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q1_Data_Center_Operations_Report.pdf", "page": 3},
+        {"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 1}
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "How much capacity would ATL-2 Phase 1 add, what would it cost, and when would it be in service?",
+      "answerable": true,
+      "expected": [{"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 2}]
+    },
+    {
+      "id": "q04",
+      "question": "How does the remediation budget in the capital plan compare with the engineering cost estimate for remediation?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 3},
+        {"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 2}
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "What is the probability of a site-wide outage at ATL-1 if remediation is deferred, and what would an outage cost per hour?",
+      "answerable": true,
+      "expected": [{"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 3}]
+    },
+    {
+      "id": "q06",
+      "question": "Should ApexSphere prioritize expanding in Atlanta or resolving its existing infrastructure risks?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q1_Data_Center_Operations_Report.pdf", "page": 1},
+        {"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 3},
+        {"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 2}
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "What is ApexSphere's current net leverage and how close would it get to the covenant limit?",
+      "answerable": true,
+      "expected": [{"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 3}]
+    },
+    {
+      "id": "q08",
+      "question": "Why is the utility interconnect a risk to both the expansion and the remediation plan?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 4},
+        {"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 2}
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "How much Atlanta demand is on the waitlist and how much of ATL-2 Phase 1 is already pre-leased?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q1_Data_Center_Operations_Report.pdf", "page": 2},
+        {"source": "ApexSphere_Q2_Financial_and_Expansion_Strategy.pdf", "page": 2}
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What is the status of Chiller Plant 2 and what would replacing it cost?",
+      "answerable": true,
+      "expected": [
+        {"source": "ApexSphere_Q1_Data_Center_Operations_Report.pdf", "page": 4},
+        {"source": "ApexSphere_Infrastructure_Risk_and_Resilience_Assessment.pdf", "page": 2}
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "How many employees does ApexSphere have in total?",
+      "answerable": false,
+      "expected": []
+    },
+    {
+      "id": "q12",
+      "question": "What was ApexSphere's Q3 revenue?",
+      "answerable": false,
+      "expected": []
+    },
+    {
+      "id": "q13",
+      "question": "Does ApexSphere hold a SOC 2 Type II or FedRAMP authorization?",
+      "answerable": false,
+      "expected": []
+    },
+    {
+      "id": "q14",
+      "question": "Who is the CEO of ApexSphere and when were they appointed?",
+      "answerable": false,
+      "expected": []
+    }
+  ]
+}

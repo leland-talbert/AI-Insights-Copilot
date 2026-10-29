@@ -1,0 +1,20 @@
+# App
+streamlit>=1.66,<2
+openai>=3.30,<4
+pypdf>=5.9,<6
+python-dotenv>=1.2
+pandas>=2.2
+
+# Vector store (Postgres + pgvector)
+psycopg[binary]>=3.3,<4
+pgvector>=0.5,<0.6
+numpy>=2.0
+
+# Observability (Arize Phoenix via OpenTelemetry / OpenInference)
+arize-phoenix-otel>=0.17
+openinference-instrumentation-openai>=0.1.65
+opentelemetry-api>=1.45
+
+# Dev: tests and sample-document generation
+pytest>=9.0
+reportlab>=5.0

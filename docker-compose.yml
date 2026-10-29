@@ -1,0 +1,34 @@
+# Local infrastructure: Postgres with pgvector, and Arize Phoenix for tracing.
+#   docker compose up -d
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: copilot-db
+    environment:
+      POSTGRES_USER: copilot
+      POSTGRES_PASSWORD: copilot
+      POSTGRES_DB: copilot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U copilot -d copilot"]
+      interval: 5s
+      retries: 10
+
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    container_name: copilot-phoenix
+    ports:
+      - "6006:6006"   # UI + OTLP/HTTP collector
+      - "4317:4317"   # OTLP/gRPC
+    volumes:
+      - phoenix_data:/mnt/data
+    environment:
+      PHOENIX_WORKING_DIR: /mnt/data
+
+volumes:
+  pgdata:
+  phoenix_data:

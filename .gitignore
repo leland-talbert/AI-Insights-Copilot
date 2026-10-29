@@ -1,4 +1,12 @@
 .env
-.venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+# Local database / tracing data
+pgdata/
+phoenix_data/
+# Eval run history (keep latest.json if you want to publish a result)
+evals/results/eval_*.json
